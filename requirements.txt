@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+streamlit
+transformers
+sentence-transformers
+chromadb
+keybert
+PyPDF2
+Sastrawi
+scikit-learn
+torch
+pandas
+python-dotenv
+python-docx
+matplotlib
+seaborn
+jupyter

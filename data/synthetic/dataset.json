@@ -1,0 +1,474 @@
+[
+    {
+        "id": "doc_001",
+        "title": "Berita: Tren Cloud Computing 2024",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa teknologi baru telah dirilis. Hal ini diprediksi akan meningkatkan efisiensi. Para ahli menyarankan agar industri melakukan pelatihan. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_002",
+        "title": "Berita: Tren Cloud Computing 2024",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan meningkatkan efisiensi. Para ahli menyarankan agar industri melakukan pelatihan. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_003",
+        "title": "Surat Edaran: Perubahan Jam Kerja",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai awal bulan. Semua pihak diharap mematuhi aturan ini. HRD harus menyebarkan informasi ini ke seluruh divisi maksimal nanti sore. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "HRD -> menyebarkan informasi ini ke seluruh divisi -> nanti sore"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_004",
+        "title": "Surat Edaran: Pemeliharaan Server",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai aturan terbaru. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. Admin harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Admin -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_005",
+        "title": "Berita: Perkembangan AI Terbaru",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan menciptakan peluang baru. Para ahli menyarankan agar industri memperbarui sistem. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_006",
+        "title": "Invoice Pembelian Lisensi Software #INV-003",
+        "category": "Invoice",
+        "content": "Tagihan untuk perpanjangan lisensi. Total biaya yang harus dibayarkan adalah Rp 25.000.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bagian Keuangan harus menyelesaikan pembayaran ini paling lambat tanggal 25.",
+        "expected_action_items": [
+            "Bagian Keuangan -> menyelesaikan pembayaran ini -> tanggal 25"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_007",
+        "title": "Surat Edaran: Jadwal Cuti Bersama",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai hari ini. Semua pihak diharap mematuhi aturan ini. Sekretaris harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Sekretaris -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_008",
+        "title": "Invoice Pembelian Lisensi Software #INV-003",
+        "category": "Invoice",
+        "content": "Tagihan untuk perpanjangan lisensi. Total biaya yang harus dibayarkan adalah Rp 5.500.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Divisi Purchasing harus menyelesaikan pembayaran ini paling lambat tanggal 25.",
+        "expected_action_items": [
+            "Divisi Purchasing -> menyelesaikan pembayaran ini -> tanggal 25"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_009",
+        "title": "Berita: Tren Cloud Computing 2024",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan mengubah pasar. Para ahli menyarankan agar industri melakukan pelatihan. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_010",
+        "title": "Berita: Tren Cloud Computing 2024",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan mengubah pasar. Para ahli menyarankan agar industri melakukan pelatihan. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_011",
+        "title": "Invoice Pembelian Lisensi Software #INV-004",
+        "category": "Invoice",
+        "content": "Tagihan untuk layanan premium. Total biaya yang harus dibayarkan adalah Rp 25.000.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bagian Keuangan harus menyelesaikan pembayaran ini paling lambat Jumat.",
+        "expected_action_items": [
+            "Bagian Keuangan -> menyelesaikan pembayaran ini -> Jumat"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_012",
+        "title": "Invoice Pembelian Server #INV-003",
+        "category": "Invoice",
+        "content": "Tagihan untuk layanan premium. Total biaya yang harus dibayarkan adalah Rp 5.500.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bagian Keuangan harus menyelesaikan pembayaran ini paling lambat akhir bulan ini.",
+        "expected_action_items": [
+            "Bagian Keuangan -> menyelesaikan pembayaran ini -> akhir bulan ini"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_013",
+        "title": "Surat Edaran: Protokol Kesehatan Baru",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. Manager harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Manager -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_014",
+        "title": "Surat Edaran: Jadwal Cuti Bersama",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai hari ini. Semua pihak diharap mematuhi aturan ini. HRD harus menyebarkan informasi ini ke seluruh divisi maksimal besok. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "HRD -> menyebarkan informasi ini ke seluruh divisi -> besok"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_015",
+        "title": "Surat Edaran: Perubahan Jam Kerja",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai awal bulan. Semua pihak diharap mematuhi aturan ini. Manager harus menyebarkan informasi ini ke seluruh divisi maksimal besok. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Manager -> menyebarkan informasi ini ke seluruh divisi -> besok"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_016",
+        "title": "Berita: Perkembangan AI Terbaru",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan menciptakan peluang baru. Para ahli menyarankan agar industri bersiap. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_017",
+        "title": "Laporan Audit Internal Semester Ganjil",
+        "category": "Laporan",
+        "content": "Laporan ini membahas mengenai progres audit sistem. Hingga saat ini, pencapaian telah mencapai 80%. Namun, terdapat beberapa kendala di bagian konversi. Andi ditugaskan untuk menyelesaikan masalah ini sebelum Jumat depan. Secara keseluruhan, kondisi masih terkendali.",
+        "expected_action_items": [
+            "Andi -> menyelesaikan masalah ini -> Jumat depan"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_018",
+        "title": "Invoice Pembelian Perlengkapan Kantor #INV-001",
+        "category": "Invoice",
+        "content": "Tagihan untuk pembelian alat. Total biaya yang harus dibayarkan adalah Rp 10.000.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bendahara harus menyelesaikan pembayaran ini paling lambat Jumat.",
+        "expected_action_items": [
+            "Bendahara -> menyelesaikan pembayaran ini -> Jumat"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_019",
+        "title": "Berita: Startup Lokal Mendapat Pendanaan",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa teknologi baru telah dirilis. Hal ini diprediksi akan mengubah pasar. Para ahli menyarankan agar industri bersiap. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_020",
+        "title": "Invoice Pembelian Lisensi Software #INV-003",
+        "category": "Invoice",
+        "content": "Tagihan untuk perpanjangan lisensi. Total biaya yang harus dibayarkan adalah Rp 5.500.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Divisi Purchasing harus menyelesaikan pembayaran ini paling lambat Jumat.",
+        "expected_action_items": [
+            "Divisi Purchasing -> menyelesaikan pembayaran ini -> Jumat"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_021",
+        "title": "Surat Edaran: Perubahan Jam Kerja",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai aturan terbaru. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. Admin harus menyebarkan informasi ini ke seluruh divisi maksimal nanti sore. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Admin -> menyebarkan informasi ini ke seluruh divisi -> nanti sore"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_022",
+        "title": "Surat Edaran: Perubahan Jam Kerja",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai hari ini. Semua pihak diharap mematuhi aturan ini. HRD harus menyebarkan informasi ini ke seluruh divisi maksimal nanti sore. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "HRD -> menyebarkan informasi ini ke seluruh divisi -> nanti sore"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_023",
+        "title": "Berita: Regulasi Data Pribadi Baru",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa teknologi baru telah dirilis. Hal ini diprediksi akan menciptakan peluang baru. Para ahli menyarankan agar industri bersiap. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_024",
+        "title": "Surat Edaran: Perubahan Jam Kerja",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. Manager harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Manager -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_025",
+        "title": "Invoice Pembelian Server #INV-003",
+        "category": "Invoice",
+        "content": "Tagihan untuk perpanjangan lisensi. Total biaya yang harus dibayarkan adalah Rp 25.000.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Divisi Purchasing harus menyelesaikan pembayaran ini paling lambat akhir bulan ini.",
+        "expected_action_items": [
+            "Divisi Purchasing -> menyelesaikan pembayaran ini -> akhir bulan ini"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_026",
+        "title": "Invoice Pembelian Lisensi Software #INV-004",
+        "category": "Invoice",
+        "content": "Tagihan untuk pembelian alat. Total biaya yang harus dibayarkan adalah Rp 10.000.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bagian Keuangan harus menyelesaikan pembayaran ini paling lambat tanggal 25.",
+        "expected_action_items": [
+            "Bagian Keuangan -> menyelesaikan pembayaran ini -> tanggal 25"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_027",
+        "title": "Surat Edaran: Pemeliharaan Server",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. Sekretaris harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Sekretaris -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_028",
+        "title": "Surat Edaran: Perubahan Jam Kerja",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai awal bulan. Semua pihak diharap mematuhi aturan ini. Admin harus menyebarkan informasi ini ke seluruh divisi maksimal besok. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Admin -> menyebarkan informasi ini ke seluruh divisi -> besok"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_029",
+        "title": "Laporan Audit Internal Semester Ganjil",
+        "category": "Laporan",
+        "content": "Laporan ini membahas mengenai progres pengembangan aplikasi. Hingga saat ini, pencapaian telah mencapai Rp 500 Juta. Namun, terdapat beberapa kendala di bagian keamanan. Andi ditugaskan untuk menyelesaikan masalah ini sebelum Senin pagi. Secara keseluruhan, kondisi masih terkendali.",
+        "expected_action_items": [
+            "Andi -> menyelesaikan masalah ini -> Senin pagi"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_030",
+        "title": "Surat Edaran: Protokol Kesehatan Baru",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai hari ini. Semua pihak diharap mematuhi aturan ini. Sekretaris harus menyebarkan informasi ini ke seluruh divisi maksimal besok. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Sekretaris -> menyebarkan informasi ini ke seluruh divisi -> besok"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_031",
+        "title": "Surat Edaran: Protokol Kesehatan Baru",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. Manager harus menyebarkan informasi ini ke seluruh divisi maksimal nanti sore. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Manager -> menyebarkan informasi ini ke seluruh divisi -> nanti sore"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_032",
+        "title": "Laporan Audit Internal Q1 2024",
+        "category": "Laporan",
+        "content": "Laporan ini membahas mengenai progres kampanye iklan. Hingga saat ini, pencapaian telah mencapai tahap final. Namun, terdapat beberapa kendala di bagian server. Budi ditugaskan untuk menyelesaikan masalah ini sebelum akhir bulan. Secara keseluruhan, kondisi masih terkendali.",
+        "expected_action_items": [
+            "Budi -> menyelesaikan masalah ini -> akhir bulan"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_033",
+        "title": "Invoice Pembelian Perlengkapan Kantor #INV-003",
+        "category": "Invoice",
+        "content": "Tagihan untuk perpanjangan lisensi. Total biaya yang harus dibayarkan adalah Rp 5.500.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Akuntan harus menyelesaikan pembayaran ini paling lambat Jumat.",
+        "expected_action_items": [
+            "Akuntan -> menyelesaikan pembayaran ini -> Jumat"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_034",
+        "title": "Berita: Startup Lokal Mendapat Pendanaan",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa teknologi baru telah dirilis. Hal ini diprediksi akan menciptakan peluang baru. Para ahli menyarankan agar industri memperbarui sistem. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_035",
+        "title": "Surat Edaran: Protokol Kesehatan Baru",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai awal bulan. Semua pihak diharap mematuhi aturan ini. Admin harus menyebarkan informasi ini ke seluruh divisi maksimal besok. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Admin -> menyebarkan informasi ini ke seluruh divisi -> besok"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_036",
+        "title": "Surat Edaran: Jadwal Cuti Bersama",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai Senin depan. Semua pihak diharap mematuhi aturan ini. HRD harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "HRD -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_037",
+        "title": "Berita: Startup Lokal Mendapat Pendanaan",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan menciptakan peluang baru. Para ahli menyarankan agar industri memperbarui sistem. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_038",
+        "title": "Surat Edaran: Jadwal Cuti Bersama",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai hari ini. Semua pihak diharap mematuhi aturan ini. Sekretaris harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Sekretaris -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_039",
+        "title": "Berita: Startup Lokal Mendapat Pendanaan",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa teknologi baru telah dirilis. Hal ini diprediksi akan menciptakan peluang baru. Para ahli menyarankan agar industri melakukan pelatihan. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_040",
+        "title": "Surat Edaran: Jadwal Cuti Bersama",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai awal bulan. Semua pihak diharap mematuhi aturan ini. Manager harus menyebarkan informasi ini ke seluruh divisi maksimal besok. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Manager -> menyebarkan informasi ini ke seluruh divisi -> besok"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_041",
+        "title": "Surat Edaran: Pemeliharaan Server",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai jadwal baru. Keputusan ini efektif mulai awal bulan. Semua pihak diharap mematuhi aturan ini. Sekretaris harus menyebarkan informasi ini ke seluruh divisi maksimal nanti sore. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Sekretaris -> menyebarkan informasi ini ke seluruh divisi -> nanti sore"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_042",
+        "title": "Laporan Keuangan Bulanan Tahunan",
+        "category": "Laporan",
+        "content": "Laporan ini membahas mengenai progres pengembangan aplikasi. Hingga saat ini, pencapaian telah mencapai target awal. Namun, terdapat beberapa kendala di bagian keamanan. Budi ditugaskan untuk menyelesaikan masalah ini sebelum tanggal 15. Secara keseluruhan, kondisi masih terkendali.",
+        "expected_action_items": [
+            "Budi -> menyelesaikan masalah ini -> tanggal 15"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_043",
+        "title": "Surat Edaran: Jadwal Cuti Bersama",
+        "category": "Surat Resmi",
+        "content": "Diberitahukan kepada seluruh karyawan mengenai kebijakan perusahaan. Keputusan ini efektif mulai hari ini. Semua pihak diharap mematuhi aturan ini. Manager harus menyebarkan informasi ini ke seluruh divisi maksimal tanggal 10. Terima kasih atas kerjasamanya.",
+        "expected_action_items": [
+            "Manager -> menyebarkan informasi ini ke seluruh divisi -> tanggal 10"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_044",
+        "title": "Laporan Audit Internal Fase 1",
+        "category": "Laporan",
+        "content": "Laporan ini membahas mengenai progres kampanye iklan. Hingga saat ini, pencapaian telah mencapai Rp 500 Juta. Namun, terdapat beberapa kendala di bagian konversi. Tim Support ditugaskan untuk menyelesaikan masalah ini sebelum akhir bulan. Secara keseluruhan, kondisi masih terkendali.",
+        "expected_action_items": [
+            "Tim Support -> menyelesaikan masalah ini -> akhir bulan"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_045",
+        "title": "Laporan Proyek IT Tahunan",
+        "category": "Laporan",
+        "content": "Laporan ini membahas mengenai progres kampanye iklan. Hingga saat ini, pencapaian telah mencapai Rp 500 Juta. Namun, terdapat beberapa kendala di bagian distribusi. Tim Support ditugaskan untuk menyelesaikan masalah ini sebelum akhir bulan. Secara keseluruhan, kondisi masih terkendali.",
+        "expected_action_items": [
+            "Tim Support -> menyelesaikan masalah ini -> akhir bulan"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_046",
+        "title": "Berita: Regulasi Data Pribadi Baru",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa regulasi ketat diterapkan. Hal ini diprediksi akan mengubah pasar. Para ahli menyarankan agar industri melakukan pelatihan. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_047",
+        "title": "Berita: Perkembangan AI Terbaru",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa investasi meningkat tajam. Hal ini diprediksi akan mengubah pasar. Para ahli menyarankan agar industri bersiap. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_048",
+        "title": "Invoice Pembelian Lisensi Software #INV-001",
+        "category": "Invoice",
+        "content": "Tagihan untuk pembelian alat. Total biaya yang harus dibayarkan adalah Rp 10.000.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bendahara harus menyelesaikan pembayaran ini paling lambat tanggal 25.",
+        "expected_action_items": [
+            "Bendahara -> menyelesaikan pembayaran ini -> tanggal 25"
+        ],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_049",
+        "title": "Berita: Regulasi Data Pribadi Baru",
+        "category": "Berita",
+        "content": "Hari ini dilaporkan bahwa teknologi baru telah dirilis. Hal ini diprediksi akan meningkatkan efisiensi. Para ahli menyarankan agar industri bersiap. Tidak ada tindakan mendesak, namun perusahaan harus mulai beradaptasi dengan perubahan ini.",
+        "expected_action_items": [],
+        "expected_keywords": []
+    },
+    {
+        "id": "doc_050",
+        "title": "Invoice Pembelian Jasa Konsultan #INV-001",
+        "category": "Invoice",
+        "content": "Tagihan untuk pembelian alat. Total biaya yang harus dibayarkan adalah Rp 5.500.000. Pembayaran dapat dilakukan melalui transfer ke rekening Bank BCA 123456. Bagian Keuangan harus menyelesaikan pembayaran ini paling lambat tanggal 25.",
+        "expected_action_items": [
+            "Bagian Keuangan -> menyelesaikan pembayaran ini -> tanggal 25"
+        ],
+        "expected_keywords": []
+    }
+]
