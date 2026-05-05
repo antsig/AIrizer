@@ -1,6 +1,7 @@
 fastapi
 uvicorn
 streamlit
+torchvision
 transformers
 sentence-transformers
 chromadb
