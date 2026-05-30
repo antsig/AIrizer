@@ -103,5 +103,5 @@ Sistem ini dievaluasi secara ketat untuk memastikan performa *production-ready*:
 - **Semantic Search**: Evaluasi kualitas pencarian menggunakan **Precision@K**.
 
 ## 👥 Pengembang
-- **Nama/Tim**: [Nama Anda]
-- **Institusi**: [Nama Institusi/Universitas]
+- **Nama/Tim**: PJK-GU104
+- **Institusi**: PIJAK 2026
