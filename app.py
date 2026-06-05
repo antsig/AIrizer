@@ -36,9 +36,14 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap');
     
-    /* Apply premium typography globally */
-    html, body, [class*="css"], .stMarkdown, p, span, div, h1, h2, h3, h4, h5, h6 {
+    /* Apply premium typography globally without overriding icon fonts */
+    html, body, .stMarkdown, p, h1, h2, h3, h4, h5, h6 {
         font-family: 'Inter', sans-serif !important;
+    }
+    
+    /* Apply premium typography to input controls but preserve icons */
+    input, button, select, textarea {
+        font-family: 'Inter', sans-serif;
     }
     
     /* Premium Headers */
