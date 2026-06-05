@@ -16,7 +16,7 @@ class DocumentClassifier:
         
         if self.model_type == "zero-shot":
             # Using a multilingual zero-shot model that works well for Indonesian
-            model_name = "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli"
+            model_name = os.getenv("CLASSIFIER_MODEL", "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli")
             print(f"Loading zero-shot classification model: {model_name}...")
             try:
                 self.classifier = pipeline("zero-shot-classification", model=model_name)

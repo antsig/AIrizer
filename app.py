@@ -5,7 +5,7 @@ import json
 import pandas as pd
 
 # Menambahkan root directory ke path agar bisa import dari src
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from src.core.summarizer import DocumentSummarizer
 from src.core.classifier import DocumentClassifier
@@ -34,43 +34,133 @@ st.set_page_config(
 # --- CSS Styling ---
 st.markdown("""
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap');
+    
+    /* Apply premium typography globally */
+    html, body, [class*="css"], .stMarkdown, p, span, div, h1, h2, h3, h4, h5, h6 {
+        font-family: 'Inter', sans-serif !important;
+    }
+    
+    /* Premium Headers */
     .main-header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #1E88E5;
-        margin-bottom: 0px;
+        font-family: 'Outfit', sans-serif !important;
+        font-size: 2.8rem;
+        font-weight: 800;
+        background: linear-gradient(135deg, #1E88E5 0%, #1565C0 50%, #0D47A1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 4px;
+        letter-spacing: -0.5px;
     }
+    
     .sub-header {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         color: var(--text-color);
-        opacity: 0.8;
-        margin-bottom: 30px;
+        opacity: 0.75;
+        margin-bottom: 24px;
+        line-height: 1.4;
     }
+    
+    /* Glassmorphism Cards with Smooth Transitions */
     .card {
-        background-color: var(--secondary-background-color);
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(128, 128, 128, 0.15);
         color: var(--text-color);
         padding: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(128, 128, 128, 0.2);
-        margin-bottom: 20px;
+        border-radius: 14px;
+        margin-bottom: 18px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
+    
+    .card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px rgba(30, 136, 229, 0.1);
+        border-color: rgba(30, 136, 229, 0.3);
+    }
+    
+    /* Pill Badges with Hover Effect */
     .badge {
         display: inline-block;
-        padding: 5px 10px;
-        background-color: #1E88E5;
-        color: white;
-        border-radius: 15px;
-        font-size: 0.9rem;
-        margin-right: 5px;
-        margin-bottom: 5px;
+        padding: 6px 14px;
+        background: linear-gradient(135deg, rgba(30, 136, 229, 0.08) 0%, rgba(21, 101, 192, 0.12) 100%);
+        color: #1E88E5 !important;
+        border: 1px solid rgba(30, 136, 229, 0.25);
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-right: 6px;
+        margin-bottom: 8px;
+        transition: all 0.2s ease;
     }
+    
+    .badge:hover {
+        background: #1E88E5;
+        color: white !important;
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(30, 136, 229, 0.2);
+    }
+    
+    /* Action Items Sleek Border & Hover Transform */
     .action-item {
-        background-color: var(--secondary-background-color);
+        background: rgba(255, 152, 0, 0.03);
         color: var(--text-color);
-        border-left: 5px solid #ff9800;
-        padding: 10px;
+        border-left: 5px solid #FF9800;
+        border-top: 1px solid rgba(255, 152, 0, 0.12);
+        border-right: 1px solid rgba(255, 152, 0, 0.12);
+        border-bottom: 1px solid rgba(255, 152, 0, 0.12);
+        padding: 14px 18px;
         margin-bottom: 10px;
-        border-radius: 0 5px 5px 0;
+        border-radius: 0 10px 10px 0;
+        transition: all 0.2s ease;
+    }
+    
+    .action-item:hover {
+        transform: translateX(4px);
+        background: rgba(255, 152, 0, 0.06);
+    }
+    
+    /* Smooth Scrollbar for Premium Feel */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(128, 128, 128, 0.3);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(128, 128, 128, 0.5);
+    }
+
+    /* Mobile Responsiveness (Responsive Typography & Spacing) */
+    @media (max-width: 768px) {
+        .main-header {
+            font-size: 1.9rem !important;
+            line-height: 1.2;
+            text-align: center;
+        }
+        .sub-header {
+            font-size: 0.95rem !important;
+            text-align: center;
+            margin-bottom: 18px !important;
+        }
+        .card {
+            padding: 16px !important;
+            margin-bottom: 14px !important;
+        }
+        .badge {
+            font-size: 0.8rem !important;
+            padding: 4px 10px !important;
+        }
+        .action-item {
+            padding: 10px 14px !important;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -117,7 +207,7 @@ if 'models_loaded' not in st.session_state:
         """
         st.markdown(css_spinner, unsafe_allow_html=True)
         
-        st.info("💡 **Tahukah Anda?** Sistem saat ini sedang memuat model *Natural Language Processing* (NLP) yang berukuran ratusan Megabyte ke dalam memori RAM komputer Anda. Proses ini memakan waktu beberapa detik dan hanya terjadi pada saat pertama kali aplikasi dijalankan.")
+        st.info("💡 **Tahukah Anda?** Sistem saat ini sedang memuat model *Natural Language Processing* (NLP) yang berukuran cukup besar ke dalam memori server/komputer Anda. Proses ini memakan waktu beberapa saat dan hanya terjadi pada saat pertama kali aplikasi dijalankan.")
         
     # Jeda sesaat agar browser sempat me-render elemen UI di atas sebelum thread diblokir oleh AI
     time.sleep(0.2)
@@ -135,8 +225,9 @@ app_mode = st.sidebar.radio("Pilih Mode:", ["Analisis Dokumen", "Pencarian Seman
 st.sidebar.markdown("---")
 st.sidebar.info(
     "**Tentang Sistem**\n\n"
-    "Ini adalah prototipe Document Intelligence System menggunakan "
-    "HuggingFace Transformers, KeyBERT, dan ChromaDB."
+    "Sistem AI Document Intelligence canggih yang menggabungkan model **mT5** (peringkasan), "
+    "**IndoBERT-QA** (tanya-jawab), **mDeBERTa-v3** (klasifikasi zero-shot), "
+    "**KeyBERT** (kata kunci), dan **ChromaDB** (pencarian semantik)."
 )
 
 # --- Mode 1: Document Analysis ---
@@ -259,7 +350,6 @@ if app_mode == "Analisis Dokumen":
                 st.markdown(f'<div class="card">{kw_html}</div>', unsafe_allow_html=True)
                 
             # Tambahkan ke Vector DB di background agar bisa dicari nanti
-            # In a real app, this would be a separate indexing process
             if input_method == "Ketik/Paste Teks Sendiri":
                 doc_id = f"doc_{pd.Timestamp.now().strftime('%Y%m%d%H%M%S')}"
                 models["search_engine"].add_documents([text_input], [{"source": "manual_input", "category": label}], [doc_id])
@@ -345,20 +435,23 @@ elif app_mode == "Pencarian Semantik (Vector DB)":
         st.write("") # Spacer vertical alignment
         st.write("") # Spacer vertical alignment
         if st.button("📂 Browse...", use_container_width=True):
-            import tkinter as tk
-            from tkinter import filedialog
-            
-            root = tk.Tk()
-            root.withdraw()
-            root.wm_attributes('-topmost', 1)
-            folder = filedialog.askdirectory(master=root)
-            root.destroy()
-            
-            if folder:
-                # Normalisasi path untuk Windows
-                folder = os.path.normpath(folder)
-                st.session_state['selected_folder_path'] = folder
-                st.rerun()
+            try:
+                import tkinter as tk
+                from tkinter import filedialog
+                
+                root = tk.Tk()
+                root.withdraw()
+                root.wm_attributes('-topmost', 1)
+                folder = filedialog.askdirectory(master=root)
+                root.destroy()
+                
+                if folder:
+                    # Normalisasi path untuk Windows
+                    folder = os.path.normpath(folder)
+                    st.session_state['selected_folder_path'] = folder
+                    st.rerun()
+            except Exception as e:
+                st.error("Fitur 'Browse' tidak didukung di lingkungan cloud ini (headless server). Silakan masukkan path folder secara manual pada kolom input di samping.")
 
     # Sinkronisasi state jika pengguna mengetik manual
     if custom_path != st.session_state['selected_folder_path']:

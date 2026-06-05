@@ -12,16 +12,13 @@ class DocumentSummarizer:
         Inisialisasi Document Summarizer menggunakan HuggingFace transformers secara langsung
         untuk menghindari isu pipeline 'Unknown task summarization' di versi transformers terbaru.
         """
-        model_name = "cahya/bert2bert-indonesian-summarization"
+        model_name = os.getenv("SUMMARIZATION_MODEL", "csebuetnlp/mT5_multilingual_XLSum")
         print(f"Loading summarization model: {model_name}...")
         
         try:
-            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            # Karena modelnya bert2bert, bisa menggunakan EncoderDecoderModel atau AutoModel
-            try:
-                self.model = EncoderDecoderModel.from_pretrained(model_name)
-            except:
-                self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+            # use_fast=False sering disarankan untuk model mT5 (SentencePiece)
+            self.tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
+            self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
             self.is_loaded = True
         except Exception as e:
             print(f"Error loading model {model_name}: {e}")

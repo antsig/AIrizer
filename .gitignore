@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local Database & Virtualenvs
+data/chroma_db/
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local Hugging Face Space clone folder (to avoid nesting)
+summAIrizer/

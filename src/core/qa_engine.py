@@ -1,3 +1,4 @@
+import os
 import requests
 import json
 import torch
@@ -8,7 +9,10 @@ class DocumentQA:
     Extractive Question Answering Engine for Indonesian Documents.
     Using IndoBERT-QA model to extract the exact answer span from the context.
     """
-    def __init__(self, model_name="Rifky/Indobert-QA"):
+    def __init__(self, model_name=None):
+        if model_name is None:
+            model_name = os.getenv("QA_MODEL", "Rifky/Indobert-QA")
+        print(f"Loading QA model: {model_name}...")
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
             self.model = AutoModelForQuestionAnswering.from_pretrained(model_name)
